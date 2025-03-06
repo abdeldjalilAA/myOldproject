@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+button{
+  
+  background-color: rebeccapurple;
+  color: white;
+  border: none;
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+}
+button.active{ transform: translateX(-100px); -webkit-transform: translateX(-100px); -moz-transform: translateX(-100px); -ms-transform: translateX(-100px); -o-transform: translateX(-100px);
+}

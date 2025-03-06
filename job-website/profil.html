@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styless.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-header">
+      <div class="avatar-container">
+        <img src="avatar.jpg" alt="Avatar">
+      </div>
+      <div class="profile-info">
+        <h1>John Doe</h1>
+        <p>Location: New York</p>
+        <p>Email: john.doe@gmail.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Rating: 4.5/5</p>
+      </div>
+    </div>
+    <div class="profile-body">
+      <div class="picture-container">
+        <img src="picture1.jpg" alt="Picture 1">
+        <img src="picture2.jpg" alt="Picture 2">
+        <img src="picture3.jpg" alt="Picture 3">
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Profile</title>
+    <style>
+      /* Style for avatar image */
+      .avatar {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      /* Style for personal information */
+      .info {
+        margin: 20px;
+      }
+      /* Style for rating */
+      .rating {
+        display: inline-block;
+        font-size: 24px;
+        color: orange;
+      }
+      /* Style for upload button */
+      .upload {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img class="avatar" src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+    </div>
+    <div class="info">
+      <h2>John Doe</h2>
+      <p>Age: 25</p>
+      <p>Gender: Male</p>
+      <p>Location: New York, USA</p>
+      <p>Phone: 123-456-7890</p>
+      <p>Email: johndoe@example.com</p>
+      <div class="rating">
+        &#9733; &#9733; &#9733; &#9733; &#9734;
+      </div>
+      <button class="upload">Upload Pictures</button>
+    </div>
+    <script>
+      // Script for the upload button
+      const uploadButton = document.querySelector('.upload');
+      uploadButton.addEventListener('click', () => {
+        // TODO: implement code to upload pictures
+        console.log('Upload button clicked');
+      });
+    </script>
+  </body>
+</html>

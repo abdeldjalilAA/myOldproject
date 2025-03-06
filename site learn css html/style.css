@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+ height: 110px;
+ width:100%;
+ background-image:linear-gradient(to right ,rgb(255, 81, 0),rgb(0, 81, 255)) ;
+
+
+}
+#logobox{
+width: 30%;
+height: 100%;
+/* float: right; */
+float:right;
+/* background-color: aliceblue ; */
+
+}
+
+#h11{
+    float: left;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    /* background-color: beige; */
+    text-align: center;
+    line-height: 100px;
+    color: bisque;
+    padding: 0 15px;
+}
+#logo{
+    /* width: 50%; */
+    height: 100%;
+    border-radius: 50%;
+    float: right;
+}
+nav{
+    width: 70%;
+    text-align: center;
+}
+nav a{
+text-decoration: none;
+color: chartreuse;
+font-weight: bold;
+display: inline-block;
+/* border: 1px; */
+/* font-style: ; */
+
+
+
+}
+nav li {
+    display: inline-block;
+    line-height: 100px;
+    width: 100px;
+    /* background-color: violet; */
+    text-align: center;
+}
+nav a:hover{
+    background-color: rgb(49, 49, 138);
+    color: red;
+
+
+
+
+}
+main{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(104, 202, 74);
+    border-top:3px solid white ;
+     clipPath: polygon(4% 0,100% 97%,95% 100%,0% 100%);
+     animation: chnagebackground 5s   infinite  ;
+}
+
+/* clipPath: polygon(6% 0,100% 0%,95% 100%,0% 100%); */
+@keyframes chnagebackground {
+ 0%{
+     background-color: blue;
+ }   
+
+ 50%{
+     background-color: blueviolet;
+
+ }
+ 75%{
+     background-color: brown;
+
+ }
+ 100%{
+     background-color: cadetblue;
+ }
+ 
+}
+aside{
+
+    width: 30%;
+    height: 100%;
+    background-color: beige;
+    text-align: center;
+    float: left;
+
+}
+aside img{
+
+    width: 90%;
+     
+}
+#h1aside{
+    padding: 2px 0;
+    border-bottom: 2px solid red ;
+}
+#artic{
+    float: right;
+    width: 70%;
+    /* background-color: cornflowerblue; */
+    height:  450px;
+    position: relative;
+}
+#box{
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    height: 180px;
+    background-color: beige;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+
+}
+#box h1{
+    border-bottom: 3px solid yellow;
+    padding: 15px;
+}
+#conat{
+    width: 100%;
+    display: flex;
+    /* text-decoration: none; */
+    justify-content: center;
+    margin-top: 14px;
+    border-bottom: 2px double yellowgreen;
+
+}
+#do{
+    width: 45px;
+    /* padding: 15px; */
+padding-left: 4px;
+padding-right: 4px;
+
+}
+#conat a {
+    /* width: 100%; */
+    /* display: flex; */
+    text-decoration: none;
+    color: aqua;
+    /* padding: 1px; */
+    /* margin: 0; */
+}
+#do:hover{
+    width:55px;
+    border-bottom: 3px solid violet;
+}
+ @media only screen and (min-width:400px)and(max-width:1070px){
+     #logobox{
+         width:75%;
+
+     }
+ }

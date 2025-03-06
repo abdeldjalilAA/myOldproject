@@ -1,0 +1,11 @@
+.mydiv {
+    background-color: aquamarine;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+#draw {
+    border: 1px solid black;
+}

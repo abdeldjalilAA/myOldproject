@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+.heart{
+  position: fixed;
+  top: -7vh;
+  transform: translateY(0);
+  font-size: x-large;
+  animation: fall 3s linear forwards;
+  -webkit-animation: fall 3s linear forwards;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+@keyframes fall {
+
+  to {
+    transform: translateY(105vh);
+    -webkit-transform: translateY(105vh);
+    -moz-transform: translateY(105vh);
+    -ms-transform: translateY(105vh);
+    -o-transform: translateY(105vh);
+}
+}

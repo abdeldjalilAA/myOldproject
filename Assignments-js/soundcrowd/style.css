@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(178, 127, 228);
+
+}
+.btn {
+ background-color: rebeccapurple;
+ color: white;
+ border: none;
+ padding: 1rem 3rem;
+ margin: 1rem;
+ border-radius:2px ;
+ -webkit-border-radius:2px ;
+ -moz-border-radius:2px ;
+ -ms-border-radius:2px ;
+ -o-border-radius:2px ;
+}

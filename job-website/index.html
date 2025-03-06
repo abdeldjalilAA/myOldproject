@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Signup Page</title>
+    <style>
+      /* Add your styling here */
+      form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] ,
+select{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>Signup Page</h1>
+    <form action="signup.php" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone"><br>
+
+      <label for="client">Client:</label>
+      <input type="checkbox" id="client" name="client_type" value="client" checked><br>
+
+      <label for="company">Company:</label>
+      <input type="checkbox" id="company" name="client_type" value="company"><br>
+
+      <div id="company_fields" style="display: none;">
+        <label for="pays">Pays:</label>
+        <input type="text" id="pays" name="pays"><br>
+
+        <label for="ville">Ville:</label>
+        <input type="text" id="ville" name="ville"><br>
+
+        <label for="adresse">Adresse:</label>
+        <input type="text" id="adresse" name="adresse"><br>
+
+        <label for="code_postal">Code Postal:</label>
+        <input type="text" id="code_postal" name="code_postal"><br>
+
+        <label for="phone2">Phone 2:</label>
+        <input type="tel" id="phone2" name="phone2"><br>
+
+        <label for="description">Description:</label>
+        <label for="wilayas">Choose a wilaya:</label>
+<select id="wilayas" name="wilayas">
+  <option value="1">Adrar</option>
+  <option value="2">Chlef</option>
+  <option value="3">Laghouat</option>
+  <option value="4">Oum El Bouaghi</option>
+  <option value="5">Batna</option>
+  <option value="6">Béjaïa</option>
+  <option value="7">Biskra</option>
+  <option value="8">Béchar</option>
+  <option value="9">Blida</option>
+  <option value="10">Bouira</option>
+  <option value="11">Tamanrasset</option>
+  <option value="12">Tébessa</option>
+  <option value="13">Tlemcen</option>
+  <option value="14">Tiaret</option>
+  <option value="15">Tizi Ouzou</option>
+  <option value="16">Alger</option>
+  <option value="17">Djelfa</option>
+  <option value="18">Jijel</option>
+  <option value="19">Sétif</option>
+  <option value="20">Saïda</option>
+  <option value="21">Skikda</option>
+  <option value="22">Sidi Bel Abbès</option>
+  <option value="23">Annaba</option>
+  <option value="24">Guelma</option>
+  <option value="25">Constantine</option>
+  <option value="26">Médéa</option>
+  <option value="27">Mostaganem</option>
+  <option value="28">M'Sila</option>
+  <option value="29">Mascara</option>
+  <option value="30">Ouargla</option>
+  <option value="31">Oran</option>
+  <option value="32">El Bayadh</option>
+  <option value="33">Illizi</option>
+  <option value="34">Bordj Bou Arréridj</option>
+  <option value="35">Boumerdès</option>
+  <option value="36">El Taref</option>
+  <option value="37">Tindouf</option>
+  <option value="38">Tissemsilt</option>
+  <option value="39">El Oued</option>
+  <option value="40">Khenchela</option>
+  <option value="41">Souk Ahras</option>
+  <option value="42">Tipaza</option>
+  <option value="43">Mila</option>
+  <option value="44">Aïn Defla</option>
+  <option value="45">Naâma</option>
+  <option value="46">Aïn Témouchent</option>
+  <option value="47">Ghardaïa</option>
+  <option value="48">Relizane</option>
+</select>
+
+
+
+        <textarea id="description" name="description"></textarea><br>
+      </div>
+
+      <input type="submit" value="Signup">
+    </form>
+
+    <script>
+      var clientCheckbox = document.getElementById("client");
+      var companyFields = document.getElementById("company_fields");
+
+      clientCheckbox.addEventListener("change", function() {
+        if (clientCheckbox.checked) {
+          companyFields.style.display = "none";
+        } else {
+          companyFields.style.display = "block";
+        }
+      });
+    </script>
+  </body>
+</html>
